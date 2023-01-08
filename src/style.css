@@ -1,27 +1,63 @@
-*{
-    color: white;
-}
 body{
     background-color: rgba(0, 0, 0, 0.95);
     margin-left: 7rem;
     margin-right: 5rem;
+    color: white;
 }
+/* css do linków */
 a{
     color: rgba(114, 100, 100, 0.74);
     text-decoration: none;
     font-size: 1.4vw;
+    transition: 0.5s;
 }
 a:hover{
     color: rgb(221, 175, 24);
+    font-size: 1.5vw;
 }
+a p:hover{
+    transition: 0.5s;
+    font-size: 1.7vw;
+}
+
+/* css do głównych kafelków */
 .main-containers{
     height: 20rem;
     background-color: rgba(114, 100, 100, 0.493);
+    border-radius: 20px;
+    transition: 0.5s;
 }
-.main-containers:hover{
-    background-color: rgb(221, 175, 24);
+.main-containers a{
+    color: white;
 }
 
+.main-containers:hover{
+    background-color: rgba(221, 175, 24, 0.904);
+    color: black;
+}
+.main-containers a:hover{
+    font-size: 1.5vw;
+    color: black;
+}
+.main-containers svg{
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+}
+
+
+/* animacja dla ikonek :) */
+svg:hover{
+    animation: rotation 1s 1;
+}
+@keyframes rotation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* responsywność, zmiany zależne od wielkości ekranu urządzenia */
 @media (min-width:1200px) {
     .fsize{
         font-size: 30px;
