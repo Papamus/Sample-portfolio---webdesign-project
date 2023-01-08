@@ -4,6 +4,11 @@ body{
     margin-right: 5rem;
     color: white;
 }
+.menu{
+    position: sticky;
+    top: 0;
+}
+
 /* css do linków */
 a{
     color: rgba(114, 100, 100, 0.74);
@@ -46,7 +51,7 @@ a p:hover{
 }
 
 
-/* animacja dla ikonek :) */
+/* animacje dla ikonek :) */
 svg:hover{
     animation: rotation 1s 1;
 }
