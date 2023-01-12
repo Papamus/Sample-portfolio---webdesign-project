@@ -70,14 +70,23 @@ svg:hover{
     .fsize{
         font-size: 30px;
     }
+    .fsizetext{
+        font-size: 20px;
+    }
 }
 @media (max-width:1199.98px) {
     .fsize{
         font-size: 25px;
     }
+    .fsizetext{
+        font-size: 15px;
+    }
 }
 @media (max-width:500px) {
     .fsize{
+        font-size: 15px;
+    }
+    .fsizetext{
         font-size: 10px;
     }
 }
