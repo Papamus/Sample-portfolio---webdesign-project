@@ -39,7 +39,7 @@ a p:hover{
 
 /* css do głównych kafelków */
 .main-containers{
-    height: 20rem;
+    height: 22rem;
     background-color: rgba(75, 69, 69, 0.493);
     border-radius: 20px;
     transition: 0.5s;
