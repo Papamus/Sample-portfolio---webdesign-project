@@ -6,6 +6,7 @@ body{
     margin-left: 7rem;
     margin-right: 7rem;
     color: white;
+    
 }
 .menu{
     position: sticky;
@@ -19,6 +20,8 @@ body{
     background-color:rgb(29, 27, 27);
     border-radius: 20px;
     height: 50px;
+    position: relative;
+    width: 100%;
 }
 
 /* css do linków */
@@ -39,7 +42,7 @@ a p:hover{
 
 /* css do głównych kafelków */
 .main-containers{
-    height: 22rem;
+    height: 23rem;
     background-color: rgba(75, 69, 69, 0.493);
     border-radius: 20px;
     transition: 0.5s;
@@ -76,7 +79,7 @@ svg:hover{
 /* responsywność, zmiany zależne od wielkości ekranu urządzenia */
 @media (min-width:1200px) {
     .fsize{
-        font-size: 30px;
+        font-size: 35px;
     }
     .fsizetext{
         font-size: 20px;
@@ -84,18 +87,42 @@ svg:hover{
 }
 @media (max-width:1199.98px) {
     .fsize{
-        font-size: 25px;
+        font-size: 27px;
     }
     .fsizetext{
         font-size: 15px;
     }
 }
-@media (max-width:500px) {
+@media (max-width:800px) {
+    .fsize{
+        font-size: 23px;
+    }
+    .fsizetext{
+        font-size: 12px;
+    }
+}
+@media (max-width:600px) {
     .fsize{
         font-size: 15px;
     }
     .fsizetext{
         font-size: 10px;
+    }
+    .main-containers svg{
+        width: 60%;
+        height: 60%;
+    }
+}
+@media (max-width:400px) {
+    .fsize{
+        font-size: 13px;
+    }
+    .fsizetext{
+        font-size: 9px;
+    }
+    .main-containers svg{
+        width: 50%;
+        height: 50%;
     }
 }
 
@@ -106,8 +133,8 @@ svg:hover{
 
 /* slajder */
 .swiper {
-    width: 50%;
-    height: 700px;
+    width: 35%;
+    height: 550px;
   }
 
 .swiper-slide {
